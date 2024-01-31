@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Catalog</title>
+    <title>product catalog v-2</title>
 </head>
 <body>
     
-
+<form id="product-form">
+    <input type="text"  id="product-name" placeholder="Name">
+    <input type="number" id="product-price" placeholder="Price">
+    <select name="product-currency" id="product-currency">
+        <option value="USD"> USD </option>
+        <OPtion value="EUR">EUR</OPtion>
+    </select>
+    <input type="number" id="product-amount" placeholder="Amount">
+    <label for="product-isprime">Is this prime?</label>
+    <input type="checkbox" id="product-isprime">
+    <input type="submit" value="add new product">
+</form>
 
 
 
