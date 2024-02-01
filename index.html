@@ -6,15 +6,22 @@
     <title>product catalog v-2</title>
 </head>
 <body>
-    
+
+    <h3>Product Catalog</h3>
+    <!-- pseudo-code -->
+    <!-- 1.  in HTML design the input form -->
+    <!--//2.  in js get the HTML element that we want to watch for an event on...
+    3. in js add some EventListners that watches for form submit
+    in js when a form submit happens, get all the values form the input and add to an array
+  -->
 <form id="product-form">
-    <input type="text"  id="product-name" placeholder="Name">
-    <input type="number" id="product-price" placeholder="Price">
+    <input type="text"  id="product-name" placeholder="Name"> 
+    <input type="number" id="product-price" placeholder="Price"><br>
     <select name="product-currency" id="product-currency">
         <option value="USD"> USD </option>
         <OPtion value="EUR">EUR</OPtion>
     </select>
-    <input type="number" id="product-amount" placeholder="Amount">
+    <input type="number" id="product-amount" placeholder="Amount"><br>
     <label for="product-isprime">Is this prime?</label>
     <input type="checkbox" id="product-isprime">
     <input type="submit" value="add new product">
@@ -22,6 +29,6 @@
 
 
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
