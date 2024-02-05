@@ -69,11 +69,14 @@ for (let product of productCatalog) {
 
     
     const newText = document.createElement("div");
-    newText.classList.add("h-screen", "flex", "justify-center", "items-center");
-    newText.innerHTML = `<p> product Name: ${product['productName']} </p>
-                         <p> product price: $${product['productPrice']} </P>
-                         <p> product currency: ${product['productCurrency']} </p>
-                        <p> product amount: ${product['productAmount']} </p>
+    newText.classList.add("h-screen", "flex", "justify-center", "items-center",  );
+    newText.innerHTML = `
+                        <div>
+                            <p> product Name: ${product['productName']} </p>
+                            <p> product price: $${product['productPrice']} </P>
+                            <p> product currency: ${product['productCurrency']} </p>
+                            <p> product amount: ${product['productAmount']} </p>
+                        </div>
                         `
     bodyElement.appendChild(newText)
     
