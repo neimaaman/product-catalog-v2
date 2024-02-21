@@ -21,15 +21,17 @@ const preview = function (event) {
 
     // in js when a form submit happens, get all the values form the input and add to an array
     const nameEl = document.querySelector('#product-name');
-    const priceEl = document.querySelector('#product-price');
-    const currencyEl = document.querySelector('#product-currency');
-    const amountEl = document.querySelector('#product-amount')
-    const checkedEl = document.querySelector('#product-isprime');
         console.log(nameEl)
+    const priceEl = document.querySelector('#product-price');
         console.log(priceEl)
+    const currencyEl = document.querySelector('#product-currency');
         console.log(currencyEl)
+    const amountEl = document.querySelector('#product-amount');
         console.log(amountEl)
+    const checkedEl = document.querySelector('#product-isprime');
         console.log(checkedEl)
+
+        
     const newProduct = {
         productName: nameEl.value,
         productPrice: Number(priceEl.value),
