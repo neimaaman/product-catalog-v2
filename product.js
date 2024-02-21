@@ -9,41 +9,42 @@ class product {
   
   
   
-    getAllProduct() {
+    addProduct() {
       this.productList.push(
         {
-         
+            
           productName: this.productName,
           productPrice: this.productPrice,
           productCurrency:this. productCurrency,
           productAmount: this.productAmount,
         }
-  
-      );
-      
-  
-      return this.productList ;
-  
+        
+      )
+      return this.productList
     }
+
   
-  
-    addProduct() {
-      return this.productList;
-    }
-  
-  
+    getAllProduct() {
+        this.productList;
+        
+    
+        return this.productList ;
+    
+      }
+
+
   }
   
   // create an instance of the product class
   const productOne = new product('sandales', '110', 'USD', '23');
   
   // call getAllProduct to add productdetails to the productList
-  productOne.getAllProduct()
+  productOne.addProduct()
   console.log(productOne)
   console.log(productOne.productList)
   
   const productTwo = new product('headphone', '111', 'EUR', '234')
-  productTwo.getAllProduct()
+  productTwo.addProduct()
   console.log(productTwo.productList)
 
 
