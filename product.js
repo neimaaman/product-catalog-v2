@@ -9,7 +9,7 @@ class product {
     
   
     showName() {
-      this.productName
+      this.productName;
   
   
       return this.productName;
