@@ -1,4 +1,4 @@
-class product {
+class Product {
     constructor(productName, productPrice, productCurrency, productAmount) {
       this.productName = productName;
       this.productPrice = productPrice;
@@ -6,27 +6,32 @@ class product {
       this.productAmount = productAmount;
       this.productList = [] //initialize productList as an empty array
     }
+  
+    productDetail() {
+      this.productList.push({
+        productName: this.productName,
+        productPrice: this.productPrice, 
+        productCurrency: this.productCurrency,
+        productAmount: this.productAmount, 
+      })
+  
+      
+    }
+  
+    showProductDetail() {
+  
+     return this.productDetail();
     
-  
-    showName() {
-      this.productName;
-  
-  
-      return this.productName;
   
     }
   
-  showProductDetail() {
-    this.productList.push(
-      this.productName,
-      this.productPrice,
-      this.productAmount,
-      this.productCurrency
-    )
   
-    return this.productList
+  
+  
   }
-  }
+
+
+  
   
   
   
