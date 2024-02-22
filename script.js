@@ -28,16 +28,16 @@ const preview = function (event) {
         console.log(currencyEl)
     const amountEl = document.querySelector('#product-amount');
         console.log(amountEl)
-    const checkedEl = document.querySelector('#product-isprime');
+    const checkedEl = document.querySelector('#product-isonsale');
         console.log(checkedEl)
 
-        
+
     const newProduct = {
         productName: nameEl.value,
         productPrice: Number(priceEl.value),
         productCurrency: currencyEl.value,
         productAmount: amountEl.value,
-        isPrime: checkedEl.checked,
+        isOnSale: checkedEl.checked,
     };
 
 
@@ -53,7 +53,7 @@ const preview = function (event) {
          product amount: ${product['productAmount']}
         `
         );
-        if (product['isPrime']) {
+        if (product['isOnSale']) {
             console.log('best buy')
         }
 
@@ -64,6 +64,7 @@ const preview = function (event) {
 };
 productForm.addEventListener('submit', preview);
 console.log(productForm)
+
 function displayProducts() {
     const bodyElement = document.querySelector('#product-result')
 
