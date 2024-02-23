@@ -20,7 +20,10 @@ class Person {
   
     
       }
-  
+//   or i can do it this way too
+
+// return `${this.lastName}, ${this.firstName}, (${this.email}, ({$this.address})`;
+
     }
    
   }

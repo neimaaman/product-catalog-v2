@@ -1,3 +1,13 @@
+import { Product } from './product.js'
+import { Catalog } from './catalog.js'
+import { Product } from './person.js'
+import { Catalog } from './customer.js'
+
+const productOne = new Product('gold', '233', 'USD', '12');
+
+console.log(productOne.productDetail());
+console.log(productOne.showProductDetail())
+
 // in js get the HTML element that we want to watch for an event on...
 
 const productForm = document.querySelector('#product-form');//document object refers to the whole page of the website we r working on 
